@@ -1,0 +1,14 @@
+app:
+  name: My app
+  description: Welcome to ${app.name}
+
+db:
+  connection : "{connectionString:'http://___', userName:'foo', password:'pass'}"
+  host : 127.0.0.1
+  port : 1200
+
+management.endpoints.web.exposure.include: "*"
+
+spring.cloud.config.uri: http://localhost:8888
+
+spring.application.name: spring-boot-config
